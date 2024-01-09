@@ -43,4 +43,6 @@ yesButton.addEventListener("click",()=>{
         duration:1,
         ease:"power1.inOut"
     })
+        const chipiAudio = document.getElementsByClassName("chipi-chipi")[0]
+    chipiAudio.play()
 })
