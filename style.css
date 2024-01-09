@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@font-face {
+  font-family: "Happy Font";
+  src: url("./Assets/welcome-summer.regular.ttf");
+}
+:root {
+  --pink: rgb(255, 50, 84);
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: url("./Assets/pointer.png"), auto;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::selection {
+  background: var(--pink);
+  color: #ffffff;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.heart-intro {
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 200vh;
+  background: url("./Assets/heart3.gif"), white;
+  background-repeat: space;
+  background-size: 50px;
+  z-index: 4;
+  border: 2px var(--pink) solid;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.heart-intro .intro-content {
+  background:linear-gradient(rgba(255, 255, 255, 0),white,rgba(255, 255, 255, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: min-content;
+  padding: 10vh 0;
+}
+.heart-intro .intro-content .head-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.env-img {
+  position: absolute;
+  width: 150px;
+}
+.bottom-img {
+  bottom: -10px;
+}
+.top-img {
+  top: -10px;
+  transform: rotateX(180deg);
+}
+.top-img.right {
+  transform: rotateX(180deg) rotateY(180deg);
+}
+.left {
+  left: 3%;
+}
+.right {
+  right: 3%;
+  transform: rotateY(180deg);
+}
+
+.main {
+  background: url("./Assets/petals-falling.gif"), #fcfefc;
+  background-size: 25%;
+  color: var(--pink);
+  font-family: "Happy Font";
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: url("./Assets/icons8-pointer-25.png"), auto;
+}
+.content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .text {
+  font-size: 30px;
+}
+
+.content .hehe {
+  width: 200px;
+  user-select: none;
+}
+
+.content .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+.content .options a {
+  padding: 10px 35px;
+  font-size: 30px;
+}
+.reversed {
+  flex-direction: row-reverse;
+}
+
+.thank-you{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    bottom: -100%;
+    background: url("https://media1.tenor.com/m/sRu_1TMJfGAAAAAC/dancing-peachu-goma-and-peach.gif") center, #FCFAFC;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+@media screen and (max-width:600px) {
+    .heart-intro .intro-content .head-line h1{
+        font-size: 22px;
+    }
+    .heart-intro .intro-content .head-line img{
+        width: 30px;
+    }
+    .content .text{
+        font-size: 25px;
+    }
+    .content .options a {
+        font-size: 25px;
+    }
+    .content .hehe{
+        width: 120px;
+    }
+    .env-img {
+        width: 100px;
+    }
+}
